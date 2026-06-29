@@ -144,15 +144,3 @@ works with Docker
 works with /dev/dri
 works with successor-friendly configs
 LinuxServer.io Plex is currently the only stable way to achieve this.
----
-🏁 Final Notes for Your GitHub Page
-You can title this section:
-Plex in 2026: The Homelab-Safe Deployment Guide
-And include:
-Why official Plex image is broken
-Why LSIO Plex is stable
-Recommended Docker Compose
-Remote Access best practices
-How to remove old servers
-How to avoid XML-only mode
-How to keep Plex LAN-only and cloud-independent
