@@ -52,6 +52,12 @@ services:
     image: lscr.io/linuxserver/plex:latest
     container_name: plex
     restart: unless-stopped
+services:
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    restart: unless-stopped
+    restart: unless-stopped
 
     ports:
       - 32400:32400
