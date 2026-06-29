@@ -45,48 +45,9 @@ handles SMB mounts correctly
 handles /dev/dri correctly
 does not break after Plex upstream changes
 This is now the recommended Plex image for homelab users.
----
+
 📦 Recommended Docker Compose (2026)
-services:
-  plex:
-    image: lscr.io/linuxserver/plex:latest
-    container_name: plex
-    restart: unless-stopped
-services:
-  plex:
-    image: lscr.io/linuxserver/plex:latest
-    container_name: plex
-    restart: unless-stopped
-    restart: unless-stopped
-
-    ports:
-      - 32400:32400
-
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/New_York
-      - VERSION=docker
-      - PLEX_CLAIM=claim-xxxxxx   # optional
-
-    volumes:
-      - /appdata/plexpass:/config
-      - /appdata/plexpass/transcode:/transcode
-      - /mnt/truenas/media/movies:/movies
-      - /mnt/truenas/media/tv:/tv
-      - /mnt/truenas/media/pictures:/pictures
-      - /mnt/truenas/media/music/Lossless:/music
-      - /mnt/truenas/media/music/Playlists:/playlists
-
-    devices:
-      - /dev/dri:/dev/dri
-
-    networks:
-      - appnet
-
-networks:
-  appnet:
-    external: true
+see .yaml file
 
 Why this works
 LSIO Plex includes the WebClient bundle
